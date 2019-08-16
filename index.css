@@ -1,0 +1,67 @@
+html {
+  background-color: blue;
+  font-family: 'Schoolbell', cursive;
+  color: yellow;
+
+}
+
+h1 {
+  text-align: center;
+  font-size: 60;
+}
+h1:hover {
+  color: blue;
+  background-color: yellow;
+}
+
+div.payment {
+  position: fixed;
+  right: 75;
+  top: 200;
+}
+
+.payment {
+  font-size: 20;
+  font-weight: bold;
+
+}
+
+div.cars img {
+  height: 400;
+  position: fixed;
+  top: 225;
+  left: 40;
+}
+
+div.animate-flicker {
+  font-size: 40;
+  font-weight: bold;
+  padding-left: 10;
+}
+
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+.animate-flicker {
+   -webkit-animation: flickerAnimation .75s infinite;
+   -moz-animation: flickerAnimation .75s infinite;
+   -o-animation: flickerAnimation .75s infinite;
+    animation: flickerAnimation .75s infinite;
+}
